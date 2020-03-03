@@ -22,14 +22,18 @@ export const Label = styled.Text`
     padding: 5px;
 `;
 
-export const ContainerScrollStory = styled.View`
+export const ContainerScrollStory = styled.ScrollView.attrs({
+    horizontal: true,
+    showsHorizontalScrollIndicator: false
+})`
+    flex-direction: row;
 `; 
 
 export const ContainerItemStory = styled.View`
     width: 80px;
     height: 80px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 10px;
 `; 
 

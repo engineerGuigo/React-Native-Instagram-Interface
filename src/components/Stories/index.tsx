@@ -16,6 +16,7 @@ const Stories = () => {
                     <Label>Watch all</Label>
                 </GroupLabel>
             </ContainerHeader>
+            
             <ContainerScrollStory>
                 <ContainerItemStory>
                     <ContainerPhoto>
@@ -23,6 +24,37 @@ const Stories = () => {
                     </ContainerPhoto>
                     <Name>Rodrigo</Name>
                 </ContainerItemStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+
             </ContainerScrollStory>
         </Container>
     );
