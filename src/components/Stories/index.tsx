@@ -1,8 +1,9 @@
 import React from 'react';
 
-import { Container, ContainerHeader, GroupLabel, Label, } from './styles';
+import { Container, ContainerHeader, GroupLabel, Label, ContainerScrollStory, ContainerItemStory, ContainerPhoto, Photo, Name } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import photo from '../../assets/images/photo.png';
 
 const Stories = () => {
 
@@ -15,6 +16,14 @@ const Stories = () => {
                     <Label>Watch all</Label>
                 </GroupLabel>
             </ContainerHeader>
+            <ContainerScrollStory>
+                <ContainerItemStory>
+                    <ContainerPhoto>
+                        <Photo source={photo}/>
+                    </ContainerPhoto>
+                    <Name>Rodrigo</Name>
+                </ContainerItemStory>
+            </ContainerScrollStory>
         </Container>
     );
 };
