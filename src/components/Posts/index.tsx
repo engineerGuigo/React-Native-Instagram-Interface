@@ -10,7 +10,8 @@ import { Container,
     ContainerActions,
     ContainerActionsIcons,
     GroupIcons,
-    Label
+    Label,
+    ContainerScroll
 } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -26,33 +27,35 @@ const Posts = () => {
     })
 
     return (
-        posts && posts.map((post, index) => (
-            <Container key={index}>
-                <ContainerHeader>
-                    <ContainerItemStory>
-                            <ContainerPhoto>
-                                <Photo source={{ uri: post.postPhoto }} />
-                            </ContainerPhoto>
-                            <Name>{post.profile.name}</Name>
-                        </ContainerItemStory>
-                        <Icon name='ellipsis-h' size={14} color='#8888'/>
-                </ContainerHeader>
-                <PostPhoto source={{ uri: post.postPhoto }} />
-                <ContainerActions>
-                    <ContainerActionsIcons>
-                        <GroupIcons>
-                            <Icon name='heart' {...iconsConfigure}/>
-                            <Icon name='circle' {...iconsConfigure}/>
-                            <Icon name='paper-plane' {...iconsConfigure}/>
-                        </GroupIcons>
-                        <Icon name='bookmark' {...iconsConfigure}/>
-                    </ContainerActionsIcons>
-                    <Label>3 650 likes</Label>
-                    <Label>neymar Congratzz !! #top</Label>
-                </ContainerActions>
-            </Container> 
-        ))
-    );
+        <ContainerScroll>
+            { posts && posts.map((post, index) => (
+                <Container key={index}>
+                    <ContainerHeader>
+                        <ContainerItemStory>
+                                <ContainerPhoto>
+                                    <Photo source={{ uri: post.postPhoto }} />
+                                </ContainerPhoto>
+                                <Name>{post.profile.name}</Name>
+                            </ContainerItemStory>
+                            <Icon name='ellipsis-h' size={14} color='#8888'/>
+                    </ContainerHeader>
+                    <PostPhoto source={{ uri: post.postPhoto }} />
+                    <ContainerActions>
+                        <ContainerActionsIcons>
+                            <GroupIcons>
+                                <Icon name='heart' {...iconsConfigure}/>
+                                <Icon name='circle' {...iconsConfigure}/>
+                                <Icon name='paper-plane' {...iconsConfigure}/>
+                            </GroupIcons>
+                            <Icon name='bookmark' {...iconsConfigure}/>
+                        </ContainerActionsIcons>
+                        <Label>3 650 likes</Label>
+                        <Label>neymar Congratzz !! #top</Label>
+                    </ContainerActions>
+                </Container> 
+            )) }
+        </ContainerScroll>
+    );  
 };
 
 export default Posts;

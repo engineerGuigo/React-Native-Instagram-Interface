@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.View`
+export const ContainerScroll = styled.ScrollView.attrs({
+    vertical: true,
+    showsVerticalScrollIndicator: false
+})`
+    flex: 1;
     background-color: #fcfcfc;
+    padding-bottom: 20px;
+`;
+
+export const Container = styled.View`
+    flex: 1;
+    height: 570px;
     padding-bottom: 20px;
 `;
 
