@@ -3,7 +3,6 @@ import React from 'react';
 import { Container, ContainerHeader, GroupLabel, Label, ContainerScrollStory, ContainerItemStory, ContainerPhoto, Photo, Name } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
-import photo from '../../assets/images/photo.png';
 
 import stories from './stories.json';
 
