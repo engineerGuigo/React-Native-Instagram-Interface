@@ -9,7 +9,8 @@ import { Container,
     PostPhoto,
     ContainerActions,
     ContainerActionsIcons,
-    GroupIcons
+    GroupIcons,
+    Label
 } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -46,6 +47,8 @@ const Posts = () => {
                         </GroupIcons>
                         <Icon name='bookmark' {...iconsConfigure}/>
                     </ContainerActionsIcons>
+                    <Label>3 650 likes</Label>
+                    <Label>neymar Congratzz !! #top</Label>
                 </ContainerActions>
             </Container> 
         ))

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.View`
-    flex: 1;
     background-color: #fcfcfc;
+    padding-bottom: 20px;
 `;
 
 export const ContainerHeader = styled.View`
@@ -56,9 +56,15 @@ export const ContainerActions = styled.View`
 export const ContainerActionsIcons = styled.View`
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
 
 `;
 
 export const GroupIcons = styled.View`
     flex-direction: row;
+`;
+
+export const Label = styled.Text`
+    padding-top: 2px;
+    font-size: 12px;
 `;
