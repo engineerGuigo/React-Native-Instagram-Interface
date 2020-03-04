@@ -9,7 +9,7 @@ import { Container,
     PostPhoto,
     ContainerActions,
     ContainerActionsIcons,
-    GroupIcons,
+    GroupIcons
 } from './styles';
 
 import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -18,7 +18,10 @@ import posts from './posts.json';
 const Posts = () => {
     const [iconsConfigure] = useState({
         color: '#333',
-        size: 16
+        size: 20,
+        style: {
+            paddingRight: 15
+        }
     })
 
     return (
@@ -38,7 +41,10 @@ const Posts = () => {
                     <ContainerActionsIcons>
                         <GroupIcons>
                             <Icon name='heart' {...iconsConfigure}/>
+                            <Icon name='circle' {...iconsConfigure}/>
+                            <Icon name='paper-plane' {...iconsConfigure}/>
                         </GroupIcons>
+                        <Icon name='bookmark' {...iconsConfigure}/>
                     </ContainerActionsIcons>
                 </ContainerActions>
             </Container> 

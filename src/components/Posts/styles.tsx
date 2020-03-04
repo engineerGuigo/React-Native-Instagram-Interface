@@ -48,10 +48,17 @@ export const PostPhoto = styled.Image.attrs({
     flex:1;
     margin: 20px;
     border-radius: 8px;
-    background-color: red;
 `; 
-export const ContainerActions = styled.View``;
+export const ContainerActions = styled.View`
+    padding: 10px 20px;
+`;
 
-export const ContainerActionsIcons = styled.View``;
+export const ContainerActionsIcons = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
 
-export const GroupIcons = styled.View``;
+`;
+
+export const GroupIcons = styled.View`
+    flex-direction: row;
+`;
