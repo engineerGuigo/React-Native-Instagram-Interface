@@ -5,6 +5,8 @@ import { Container, ContainerHeader, GroupLabel, Label, ContainerScrollStory, Co
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import photo from '../../assets/images/photo.png';
 
+import stories from './stories.json';
+
 const Stories = () => {
 
     return (
@@ -18,43 +20,14 @@ const Stories = () => {
             </ContainerHeader>
             
             <ContainerScrollStory>
-                <ContainerItemStory>
+                { stories && stories.map((storie, index) => (
+                <ContainerItemStory key={index}>
                     <ContainerPhoto>
                         <Photo source={photo}/>
                     </ContainerPhoto>
-                    <Name>Rodrigo</Name>
+                    <Name>{storie.name}</Name>
                 </ContainerItemStory>
-                <ContainerItemStory>
-                    <ContainerPhoto>
-                        <Photo source={photo}/>
-                    </ContainerPhoto>
-                    <Name>Rodrigo</Name>
-                </ContainerItemStory>
-                <ContainerItemStory>
-                    <ContainerPhoto>
-                        <Photo source={photo}/>
-                    </ContainerPhoto>
-                    <Name>Rodrigo</Name>
-                </ContainerItemStory>
-                <ContainerItemStory>
-                    <ContainerPhoto>
-                        <Photo source={photo}/>
-                    </ContainerPhoto>
-                    <Name>Rodrigo</Name>
-                </ContainerItemStory>
-                <ContainerItemStory>
-                    <ContainerPhoto>
-                        <Photo source={photo}/>
-                    </ContainerPhoto>
-                    <Name>Rodrigo</Name>
-                </ContainerItemStory>
-                <ContainerItemStory>
-                    <ContainerPhoto>
-                        <Photo source={photo}/>
-                    </ContainerPhoto>
-                    <Name>Rodrigo</Name>
-                </ContainerItemStory>
-
+                )) }
             </ContainerScrollStory>
         </Container>
     );
