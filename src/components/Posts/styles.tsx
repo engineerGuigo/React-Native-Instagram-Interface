@@ -7,13 +7,14 @@ export const Container = styled.View`
 
 export const ContainerHeader = styled.View`
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 `;
 
 export const ContainerItemStory = styled.View`
-    height: 80px;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 `; 
 
 export const ContainerPhoto = styled.View`
@@ -22,7 +23,7 @@ export const ContainerPhoto = styled.View`
     height: 30px;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 50px;
 `; 
 
 export const Photo = styled.Image.attrs({
@@ -40,3 +41,17 @@ export const Name = styled.Text`
     font-size: 12px;
     padding: 5px;
 `; 
+
+export const PostPhoto = styled.Image.attrs({
+    resizeMode: 'cover'
+})`
+    flex:1;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: red;
+`; 
+export const ContainerActions = styled.View``;
+
+export const ContainerActionsIcons = styled.View``;
+
+export const GroupIcons = styled.View``;

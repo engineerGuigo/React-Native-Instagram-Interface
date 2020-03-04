@@ -16,5 +16,5 @@ export const Logo = styled.Image.attrs({
 export const ActionButton = styled.TouchableOpacity`
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 40px;
 `;
