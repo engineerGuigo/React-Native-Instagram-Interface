@@ -23,7 +23,7 @@ const Stories = () => {
                 { stories && stories.map((storie, index) => (
                 <ContainerItemStory key={index}>
                     <ContainerPhoto>
-                        <Photo source={photo}/>
+                        <Photo source={{ uri: storie.photo }} />
                     </ContainerPhoto>
                     <Name>{storie.name}</Name>
                 </ContainerItemStory>
