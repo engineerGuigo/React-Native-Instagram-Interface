@@ -6,8 +6,8 @@ export const Container = styled.View`
 
 export const SubContainer = styled.View`
     height: 60px;
-    background-color: blue;
-    justify-content: center;
+    background-color: #ffff;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 `;
